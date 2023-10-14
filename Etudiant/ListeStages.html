@@ -1,28 +1,112 @@
 <!DOCTYPE html>
 <head>
-    <title>Accueil</title>
+    <title>Recherche de stage</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="css/filtres.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 </head>
 <header>
     <div class="w3-bar w3-grey w3-mobile">
-        <a href="../Accueil.html" class="w3-bar-item w3-left w3-hover-none"><img src="../img/upec.png" style="width:25%;height:25%"></a>
+        <a href="#" class="w3-bar-item w3-left w3-hover-none"><img src="../img/upec.png" style="width:25%;height:25%"></a>
         <a href="../Accueil.html" class="w3-bar-item w3-button w3-margin-top w3-hover-red w3-red w3-right w3-margin">Déconnexion</a>
-        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-hover-none w3-right">Profil</a>
-        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-right">Mes demandes</a>
+        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-right">Profil</a>
     </div>
 </header>
 <body>
-    <div class="w3-container w3-margin-top">
-            <div class="button-check">
-            <h3>Filtres : </h3>
-            <p>
-                <input type="checkbox" name="DB" class="w3-check" value="4"> Base de données</input>
-                <input type="checkbox" name="Dev" class="w3-check" value="4"> Développement</input>
-                <input type="checkbox" name="DevWeb" class="w3-check" value="4"> Développement Web</input>
+    <div class="w3-container w3-margin-top w3-mobile">
+        <a href="Accueil.html" class="w3-bar-item w3-button w3-hover-none "style="text-decoration: none; width: 50%;">Mes demandes</a>
+        <a href="#" class="w3-bar-item w3-button w3-hover-none w3-text-blue w3-hover-text-blue"style="text-decoration: none; width: 45%;">Propositions de stages</a>
+    </div>
+    <div class="w3-container w3-margin">
+        <p style="text-align: center;">
+            Type de stages affichés :
+            <input class="w3-radio w3-margin-left" type="radio" name="time" value="now" checked><label> Actuels</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="time" value="dev_web"><label> Anciennes années</label>
+        </p>
+    </div>
+    <div class="w3-container w3-border w3-margin">
+        <p>
+            Filtres :
+            <input class="w3-radio w3-margin-left" type="radio" name="category" value="dev" checked><label> Développement</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="category" value="dev_web"><label> Développement Web</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="category" value="dev_web"><label> Base de données</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="category" value="dev_web"><label> Système / Réseau</label>
+            <input class="w3-radio w3-margin-left" type="radio" name="category" value="dev_web"><label> Design</label>
+        </p>
+    </div>
+    <div class="w3-container w3-half">
+        <a href="#" style="text-decoration: none;">
+            <div class="w3-card-4">
+                <input class="w3-radio w3-right w3-margin-right" type="radio" name="stage" value="1" checked disabled><label></label>
+                <h3 class="w3-margin-left">Développement d'application - SNCF</h3>
+                <p class="w3-margin-left"><i class="material-icons">location_on</i> Saint-Denis (93)</p>
+                <p class="w3-margin-left">
+                    Tags :
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Développement Web</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">PHP</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">JavaScript</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Java</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">XCode</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Java</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Développement</button>
+                </p>
+            </div>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <div class="w3-card">
+                <input class="w3-radio w3-right w3-margin-right" type="radio" name="stage" value="2" disabled><label></label>
+                <h3>Test</h3>
+                <p>Lorem ipsum</p>
+                <p>
+                    Tags :
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">XCode</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Java</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Développement</button>
+                </p>
+            </div>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <div class="w3-card">
+                <input class="w3-radio w3-right w3-margin-right" type="radio" name="stage" value="3" disabled><label></label>
+                <h3>Test</h3>
+                <p>Lorem ipsum</p>
+                <p>
+                    Tags :
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">XCode</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Java</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Développement</button>
+                </p>
+            </div>
+        </a>
+        <a href="#" style="text-decoration: none;">
+            <div class="w3-card">
+                <input class="w3-radio w3-right w3-margin-right" type="radio" name="stage" value="4" disabled><label></label>
+                <h3>Test</h3>
+                <p>Lorem ipsum</p>
+                <p>
+                    Tags :
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">XCode</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Java</button>
+                    <button class="w3-button w3-round-xlarge w3-grey w3-margin-bottom w3-hover-grey">Développement</button>
+                </p>
+            </div>
+        </a>
+    </div>
+    <div class="w3-container w3-half">
+        <div class="w3-card">
+            <h3 class="w3-margin-left">Développement d'application - SNCF</h3>
+            <p class="w3-container">
+                <img src="../img/Siege_SNCF.jpg" style="width: 100%">
             </p>
+            <p class="w3-margin">Suite aux retours sur notre application et notre site web SNCF Connect, nous sommes actuellement en train de faire une grande enquête chez nos utilisateurs afin de sortir une meilleure version que celle disponible actuellement. Votre mission si vous l'acceptez : Aider aux développements des nouvelles versions des différentes applications</p>
+            <p class="w3-margin-left"><i class="material-icons">person</i> 4 stagières</p>
+            <p class="w3-margin-left"><i class="material-icons">local_phone</i><a href="tel:+33 1 71 92 60 00" style="text-decoration: none;"> 01 71 92 60 00</a></p>
+            <a href="ConfirmationConvention.html" style="text-decoration: none;"><button class="w3-btn w3-green w3-margin">Préparer la convention</button></a>
         </div>
     </div>
 </body>
+<footer>
+    <a href="ConventionEntrepriseExt.html"><button class="w3-btn w3-round-xxlarge w3-red w3-display-bottomright w3-margin w3-mobile">Envoyer un stage trouvé à l'exterieur</button></a>
+</footer>
+

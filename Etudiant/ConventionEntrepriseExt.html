@@ -8,19 +8,39 @@
 </head>
 <header>
     <div class="w3-bar w3-grey w3-mobile">
-        <a href="#" class="w3-bar-item w3-left w3-hover-none"><img src="../img/upec.png" style="width:25%;height:25%"></a>
+        <a href="Accueil.html" class="w3-bar-item w3-left w3-hover-none"><img src="../img/upec.png" style="width:25%;height:25%"></a>
         <a href="../Accueil.html" class="w3-bar-item w3-button w3-margin-top w3-hover-red w3-red w3-right w3-margin">Déconnexion</a>
-        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-right">Profil</a>
+        <a href="Profil.html" class="w3-bar-item w3-button w3-margin-top w3-right">Profil</a>
     </div>
 </header>
 <body>
-    <h1 style="text-align: center;">Préparer la convention</h1>
+    <h1 style="text-align: center;">Convention pour une annonce externe</h1>
     <div class="w3-card w3-margin">
         <div class="w3-container">
-            <h2 style="text-align: center;">L'entreprise a-t-elle confirmé de vous prendre en stage ?</h2>
-            <div class="w3-container w3-center w3-margin-bottom">
-                <a href="ListeStages.html" style="text-decoration: none;"><button class="w3-btn w3-red w3-xlarge w3-margin-right">Non</button></a>
-                <a href="Accueil.html" style="text-decoration: none;"><button class="w3-btn w3-green w3-xlarge">Oui</button></a>
+            <h2 style="text-align: center;">Dites-en plus sur l'entreprise</h2>
+            <form class="w3-container w3-margin-bottom">
+                <label>Nom de l'entreprise</label>
+                <input class="w3-input" type="text">
+                <label>Lieu</label>
+                <input class="w3-input" type="text">
+                <label>Une description de votre stage</label>
+                <input class="w3-input" type="text">
+            </form>
+            <div class="w3-container">
+                <p>Quelle est la durée du stage ?
+                    <input class="w3-radio w3-margin-left" type="radio" name="duration" value="1" checked><label> 8 à 10 semaines</label>
+                    <input class="w3-radio w3-margin-left" type="radio" name="duration" value="2"><label> 10 à 12 semaines</label>
+                </p>
+            </div>
+            <div class="w3-container">
+                <p>Est-il rémunéré ?
+                    <input class="w3-radio w3-margin-left" type="radio" name="money" value="1" checked><label> Oui</label>
+                    <input class="w3-radio w3-margin-left" type="radio" name="money" value="2"><label> Non</label>
+                </p>
+            </div>
+            <div class="w3-container w3-center">
+                <a href="ListeStages.html"><button class="w3-btn w3-margin w3-red">Annuler</button></a>
+                <a href="ListeStages.html"><button class="w3-btn w3-margin w3-green">Continuer</button></a>    
             </div>
         </div>
     </div>

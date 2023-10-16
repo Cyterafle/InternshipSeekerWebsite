@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<head>
+    <title>Ajouter un stage</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<header>
+    <div class="w3-bar w3-grey w3-mobile">
+        <a href="Accueil.html" class="w3-bar-item w3-left w3-hover-none"><img src="../img/upec.png" style="width:25%;height:25%"></a>
+        <a href="../Accueil.html" class="w3-bar-item w3-button w3-margin-top w3-hover-red w3-red w3-right w3-margin">Déconnexion</a>
+        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-hover-none w3-right">Profil</a>
+        <a href="#" class="w3-bar-item w3-button w3-margin-top w3-hover-none w3-right" style="text-decoration: none;">Ajouter un stage</a>
+    </div>
+</header>
+<body>
+    <div class="w3-card-4 w3-margin">
+        <div class="w3-container">
+            <h3 style="text-align: center;">Nouveau stage</h3>
+            <p style="text-align: center;">Illustration <button class="w3-btn w3-border-black w3-gray w3-round-xxlarge">Ajouter une image...</button></p>
+            <label>Titre</label>
+            <input class="w3-input" type="text" required>
+            <label>Nom de l'entreprise</label>
+            <input class="w3-input" type="text" required>
+            <label>Tags (Mots-clefs)</label>
+            <p>
+                <input class="w3-check" type="checkbox">
+                <label>Base de données</label>
+                <input class="w3-check" type="checkbox">
+                <label>Design</label>
+                <input class="w3-check" type="checkbox">
+                <label>Cybersécurité</label>
+                <input class="w3-check" type="checkbox">
+                <label>Système / Réseau</label>
+                <input class="w3-check" type="checkbox">
+                <label>Développement Web</label>
+                <input class="w3-check" type="checkbox">
+                <label>Développement</label>
+            </p>
+            <label>Lieu</label>
+            <input class="w3-input" type="text">
+            <label>Description / Lien</label>
+            <input class="w3-input" type="text">
+            <label>Nom de l'entreprise</label>
+            <input class="w3-input" type="text">
+            <br>
+            <label>Durée</label>
+            <input class="w3-radio" type="radio" name="duration" value="8" checked>
+            <label>8 - 10 semaines</label>
+            <input class="w3-radio" type="radio" name="duration" value="10">
+            <label>10 - 12 semaines</label>
+            <br><br>
+            <label>Remnunération</label>
+            <input class="w3-radio" type="radio" name="money" value="no" checked>
+            <label>Non</label>
+            <input class="w3-radio" type="radio" name="money" value="yes">
+            <label>Oui</label>
+            <br><br>
+            <label>Télétravail</label>
+            <input class="w3-radio" type="radio" name="tele" value="no" checked>
+            <label>Non</label>
+            <input class="w3-radio" type="radio" name="tele" value="part">
+            <label>Partiel</label>
+            <input class="w3-radio" type="radio" name="tele" value="part">
+            <label>Total</label>
+            <br><br>
+            <label>Nombre d'étudiants attendus</label>
+            <input class="w3-input" id="number" type="number" value="1" min="1" max="10"/>
+        </div>
+        <p style="text-align: center;">
+            <a href="Accueil.html" class="w3-btn w3-red w3-margin">Annuler</a>
+            <a href="AttenteStage.html" class="w3-btn w3-green w3-margin">Publier</a>
+        </p>
+    </div>
+</body>
